@@ -24,6 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "features/enums.h"
 #include "features/hrmods.h"
 #include "features/dances.h"
+#include "features/macros.h"
 
 
 extern uint8_t is_master;
@@ -37,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       CW_TOGG,  HOME_A,  HOME_S,  HOME_D,  HOME_F,    ES_G,                       ES_H,   HOME_J,  HOME_K, HOME_L, HOME_NTIL, ES_ACUT, 
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      ES_LABK,    ES_Z,  ES_X,    ES_C,    ES_V,    ES_B,                         ES_N,    ES_M, ES_COMM,  ES_DOT, ES_QUOT,  ES_MINS,
+      ES_LABK,    ES_Z,  ES_X,    ES_C,    ES_V,    ES_B,                         ES_N,    ES_M, ES_COMM,  ES_DOT, ES_MINS,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
          LT(_FUNC,KC_ESC),   LT(_NUM, KC_ENTER),    TD(LT_BSPC),     LT(_SYM, KC_SPC), LT(_NAV, KC_TAB ), LT(_MEDIA, KC_DEL)
                                       //`--------------------------'  `--------------------------'
