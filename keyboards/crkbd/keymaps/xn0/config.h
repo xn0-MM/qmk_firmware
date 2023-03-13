@@ -40,17 +40,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //features 
 #define LAYER_LOCK_IDLE_TIMEOUT 60000 
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 //Home row mods
 
 #define TAPPING_TERM 180
 #define TAPPING_TERM_PER_KEY
-#define TAPPING_TERM_CUSTOM 300
+#define TAPPING_TERM_HRM 300
+#define TAPPING_TERM_BSPC 130
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
 #define IGNORE_MOD_TAP_INTERRUPT
-//#define HOLD_ON_OTHER_KEY_PRESS
-//#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+#define HOLD_ON_OTHER_KEY_PRESS
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+
+
 
 //#define TAPPING_FORCE_HOLD
 //#define TAPPING_FORCE_HOLD_PER_KEY
@@ -59,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define MOUSEKEY_INTERVAL 16
 #define MOUSEKEY_DELAY 20
-#define MOUSEKEY_MAX_SPEED 10
+#define MOUSEKEY_MAX_SPEED 20
 #define MOUSEKEY_TIME_TO_MAX 64
 
 #define MOUSEKEY_WHEEL_DELAY 20
@@ -67,8 +71,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 40
 #define MOUSEKEY_WHEEL_MAX_SPEED 0
 
-#define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
-//#define OLED_FONT_H "keyboards/crkbd/keymaps/xn0/glcdfont.c"
+//#define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
+#define OLED_FONT_H "keyboards/crkbd/keymaps/xn0/glcdfont.c"
 //#define OLED_FONT_H "keyboards/crkbd/keymaps/xn0/glcdfontL.c"
 #define OLED_TIMEOUT 60000
 //#define OLED_FADE_OUT
