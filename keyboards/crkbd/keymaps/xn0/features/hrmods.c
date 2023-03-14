@@ -32,7 +32,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
         case LT(_FUNC,KC_ESC):
         case LT(_NUM, KC_ENTER):
         //case LT(_MACRO, KC_BSPC):
-        case LT(_SYM, KC_SPC):
+        //case LT(_SYM, KC_SPC):
         case LT(_NAV, KC_TAB ):
         case LT(_MEDIA, KC_DEL):
         case TD(LT_BSPC):
@@ -74,17 +74,10 @@ bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
         //case HOME_NTIL:
             // Immediately select the hold action when another key is tapped.
         //    return true;
-        case KC_LSFT:
-            // Immediately select the hold action when another key is tapped.
-            return true;
-        case KC_RSFT:
-            // Immediately select the hold action when another key is tapped.
-            return true;
         case TD(LT_BSPC):
-
             return true;
 
-            // Dvorak
+    // Dvorak
             
         //case ALT_O:
             // Immediately select the hold action when another key is tapped.

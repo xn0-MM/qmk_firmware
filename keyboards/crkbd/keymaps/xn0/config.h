@@ -47,7 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 180
 #define TAPPING_TERM_PER_KEY
 #define TAPPING_TERM_HRM 250
-#define TAPPING_TERM_BSPC 220
+#define TAPPING_TERM_BSPC 180
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
 #define IGNORE_MOD_TAP_INTERRUPT
