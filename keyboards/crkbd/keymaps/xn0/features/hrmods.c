@@ -18,9 +18,11 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case ALT_O:
         case ALT_N:
         case GUI_S:
-            return TAPPING_TERM_HRM;
+            return TAPPING_TERM + 70;
         case TD(LT_BSPC):
-            return TAPPING_TERM_BSPC;
+            return TAPPING_TERM - 20;
+        case LT(_SYM, KC_SPC):
+            return TAPPING_TERM + 20;
         default:
             return TAPPING_TERM;
     }
@@ -39,6 +41,8 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 
         // Immediately select the hold action when another key is pressed.
             return true;
+        case LT(_SYM, KC_SPC):
+            return false;
         default:
             // Do not select the hold action when another key is pressed.
             return false;
