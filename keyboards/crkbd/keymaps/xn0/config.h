@@ -40,7 +40,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //features 
 #define LAYER_LOCK_IDLE_TIMEOUT 60000 
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+// caps word
+// #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+//combos
+#define COMBO_TERM 60
+#define COMBO_REF_DEFAULT _QWERTY
+//#define COMBO_ONLY_FROM_LAYER 
+
+//Swap hands 
+#define TAPPING_TOGGLE 1
 
 //Home row mods
 

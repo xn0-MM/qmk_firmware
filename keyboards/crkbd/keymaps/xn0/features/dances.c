@@ -11,7 +11,8 @@ td_state_t cur_dance(tap_dance_state_t *state) {
         if ( !state->pressed) return TD_SINGLE_TAP;
         else return TD_SINGLE_HOLD;
     } else if (state->count == 2) {
-        if (!state->pressed) return TD_DOUBLE_TAP ;
+        if (state->interrupted) return TD_DOUBLE_SINGLE_TAP;
+        else if (!state->pressed) return TD_DOUBLE_TAP ;
         else return TD_DOUBLE_HOLD;
     } else return TD_UNKNOWN;
 }
@@ -31,8 +32,15 @@ void lt_bspc_finished(tap_dance_state_t *state, void *user_data) {
             register_mods(MOD_BIT(KC_LCTL)); 
             register_code16(KC_BSPC);
             break;
+        case TD_DOUBLE_SINGLE_TAP:
+            tap_code16(KC_BSPC);
+            register_code16(KC_BSPC);
+            break;
         case TD_DOUBLE_HOLD: 
-            register_code(KC_BSPC); 
+            register_code16(KC_BSPC); 
+            break;
+        case TD_UNKNOWN:   
+            register_code16(KC_BSPC);
             break;
         default:
             break;
@@ -51,8 +59,14 @@ void lt_bspc_reset(tap_dance_state_t *state, void *user_data) {
             unregister_mods(MOD_BIT(KC_LCTL)); 
             unregister_code16(KC_BSPC);
             break;
+        case TD_DOUBLE_SINGLE_TAP:
+            unregister_code16(KC_BSPC);
+            break;
         case TD_DOUBLE_HOLD: 
-            unregister_code(KC_BSPC); 
+            unregister_code16(KC_BSPC); 
+            break;
+        case TD_UNKNOWN:   
+            unregister_code16(KC_BSPC);
             break;
         default:
             break;

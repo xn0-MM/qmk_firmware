@@ -23,8 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "features/oled.h"
 #include "features/enums.h"
 #include "features/hrmods.h"
-#include "features/dances.h"
+//#include "features/dances.h"
 #include "features/macros.h"
+#include "features/combos.h"
 
 
 extern uint8_t is_master;
@@ -34,26 +35,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_ESC,    ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                        ES_Y,    ES_U,    ES_I,    ES_O,   ES_P,   KC_BSPC, 
+      CW_TOGG,    ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                        ES_Y,    ES_U,    ES_I,    ES_O,   ES_P,   KC_BSPC, 
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      CW_TOGG,  HOME_A,  HOME_S,  HOME_D,  HOME_F,    ES_G,                       ES_H,   HOME_J,  HOME_K, HOME_L, HOME_NTIL, ES_ACUT, 
+      SH_TT,  HOME_A,  HOME_S,  HOME_D,  HOME_F,    ES_G,                       ES_H,   HOME_J,  HOME_K, HOME_L, HOME_NTIL, SH_TT, 
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       ES_LABK,    ES_Z,  ES_X,    ES_C,    ES_V,    ES_B,                         ES_N,    ES_M, ES_COMM,  ES_DOT, ES_MINS,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-         LT(_FUNC,KC_ESC),   LT(_NUM, KC_ENTER),    TD(LT_BSPC),     LT(_SYM, KC_SPC), LT(_NAV, KC_TAB ), LT(_MEDIA, KC_DEL)
+         LT(_FUNC,KC_ESC),   LT(_NUM, KC_ENTER),    LT(_MACRO, KC_BSPC),     LT(_SYM, KC_SPC), LT(_NAV, KC_TAB ), LT(_MEDIA, KC_DEL)
                                       //`--------------------------'  `--------------------------'
 
   ),            
 
   [_DVORAK] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-     KC_ESC, KC_COMMA, KC_DOT, KC_SEMICOLON, KC_P,   KC_Y,                          KC_F,   KC_G,   KC_C,     KC_H,   KC_L,  KC_BSPC,
+     CW_TOGG, KC_COMMA, KC_DOT, KC_SEMICOLON, KC_P,   KC_Y,                          KC_F,   KC_G,   KC_C,     KC_H,   KC_L,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     CW_TOGG,   HOME_A,   ALT_O,  CTL_E,   SFT_U,   KC_I,                         KC_D,   SFT_R,   CTL_TT,    ALT_N,  GUI_S,  ES_ACUT,
+     SH_TT,   HOME_A,   ALT_O,  CTL_E,   SFT_U,   KC_I,                         KC_D,   SFT_R,   CTL_TT,    ALT_N,  GUI_S,  SH_TT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     ES_LABK, ES_MINS, KC_Q,  KC_J,    KC_K,   KC_X,                         KC_B,   KC_M,   KC_W,     KC_V,  KC_Z,  KC_MINS,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-       LT(_FUNC,KC_ESC), LT(_NUM, KC_ENTER), TD(LT_BSPC),          LT(_SYM, KC_SPC), LT(_NAV, KC_TAB), LT(_MEDIA, KC_DEL)
+       LT(_FUNC,KC_ESC), LT(_NUM, KC_ENTER), LT(_MACRO, KC_BSPC),          LT(_SYM, KC_SPC), LT(_NAV, KC_TAB), LT(_MEDIA, KC_DEL)
   ),
 
   [_FUNC] = LAYOUT_split_3x6_3(
@@ -131,4 +132,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 };
+
+
+
+
+
+
 
