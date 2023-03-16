@@ -46,8 +46,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //combos
 #define COMBO_TERM 60
-#define COMBO_REF_DEFAULT _QWERTY
-//#define COMBO_ONLY_FROM_LAYER 
+//#define COMBO_REF_DEFAULT 0
+#define COMBO_ONLY_FROM_LAYER 0
 
 //Swap hands 
 #define TAPPING_TOGGLE 1

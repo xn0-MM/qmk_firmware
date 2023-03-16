@@ -27,7 +27,7 @@ uint8_t combo_ref_from_layer(uint8_t layer){
         case _SYM: return _SYM;
         case _NAV: return _NAV;
         case _MEDIA: return _MEDIA;
-        
+        default: return _QWERTY;
     }
    return layer;  // important if default is not in case.
 };
