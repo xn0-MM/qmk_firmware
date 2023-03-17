@@ -30,3 +30,4 @@ SRC += features/hrmods.c
 SRC += features/macros.c
 #SRC += features/dances.c
 SRC += features/combos.c
+SRC += features/caps_word.c

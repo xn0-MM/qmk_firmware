@@ -26,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#include "features/dances.h"
 #include "features/macros.h"
 #include "features/combos.h"
+#include "features/caps_word.h"
 
 
 extern uint8_t is_master;
