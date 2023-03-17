@@ -4,6 +4,7 @@
 enum combos {
   FJ_TILDE,
   LT_BSPC_CB,
+  DVK_TILDE,
   COMBO_LENGTH
 };
 
