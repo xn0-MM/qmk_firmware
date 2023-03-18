@@ -4,6 +4,7 @@
 #include "macros.h"
 #include "layer_lock.h"
 #include "sendstring_spanish.h"
+#include "combos.h"
 
 
 
@@ -97,6 +98,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 
                 }
                 return false;
+        case CAPSW_COMBO:
+            if (record->event.pressed) {
+                 caps_word_toggle();
+            }
+            return false; 
         }
     return true;
 }
