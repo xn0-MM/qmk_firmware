@@ -1,5 +1,8 @@
 #pragma once
 
+
+#include "quantum.h"
+
 enum layer_number {
     _QWERTY = 0,
     _DVORAK,

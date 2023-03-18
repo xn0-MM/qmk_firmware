@@ -1,4 +1,3 @@
-#include QMK_KEYBOARD_H
 
 #include "enums.h"
 #include "hrmods.h"

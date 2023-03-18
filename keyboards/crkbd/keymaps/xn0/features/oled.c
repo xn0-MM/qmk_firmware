@@ -1,7 +1,4 @@
 
-
-#include QMK_KEYBOARD_H
-
 #include "oled.h"
 #include "enums.h"
 

@@ -1,6 +1,3 @@
-#include QMK_KEYBOARD_H
-
-
 
 #include "caps_word.h"
 

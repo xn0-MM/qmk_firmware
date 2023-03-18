@@ -1,5 +1,7 @@
 #pragma once
 
+#include "quantum.h"
+
 
 // Left-hand home row mods
 #define HOME_A LGUI_T(KC_A)

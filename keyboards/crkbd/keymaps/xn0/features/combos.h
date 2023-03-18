@@ -1,5 +1,7 @@
 #pragma once
 
+#include "quantum.h"
+
 
 enum combos {
   FJ_TILDE,
