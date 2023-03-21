@@ -105,7 +105,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false; 
         }
     return true;
-}
+};
 
 void matrix_scan_user(void) { // The very important timer.
 
@@ -123,7 +123,9 @@ void matrix_scan_user(void) { // The very important timer.
       is_ctrl_tab_active = false;
     }
   } 
-}
+};
 
 
-
+layer_state_t layer_state_set_user(layer_state_t state) {
+  return update_tri_layer_state(state, _MACRO, _SYM, _MACRO2);
+};

@@ -85,13 +85,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MACRO] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      QK_BOOT, XXXXXXX, LCTL(KC_W),  KC_UP, LCTL(KC_T), LAYER_LOCK,                     CLOSE, LGUI(KC_LEFT), LGUI(KC_RIGHT), LGUI(KC_UP), LGUI(KC_DOWN), KC_KVM,
+      QK_BOOT, XXXXXXX, LCTL(KC_W),  KC_UP, LCTL(KC_T), LAYER_LOCK,             CLOSE, LGUI(KC_LEFT), LGUI(KC_RIGHT), LGUI(KC_UP), LGUI(KC_DOWN), KC_KVM,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX,  KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX,                    KC_ALT_TB,RCS(KC_TAB),KC_CTL_TB, LALT(KC_LEFT),LALT(KC_RIGHT) , XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     LCTL(KC_Y),LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), XXXXXXX,    LALT(KC_SPC),RCS(KC_LEFT), RCS(KC_RIGHT),  KC_SEL_LN, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                       XXXXXXX, XXXXXXX,  MO(_MACRO),     KC_SPC, KC_BSPC, KC_DEL
+                                       XXXXXXX, XXXXXXX,  XXXXXXX,      LT(_SYM, KC_SPC), KC_BSPC, KC_DEL
                                       //`--------------------------'  `--------------------------'
   ),
 

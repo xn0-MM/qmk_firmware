@@ -223,6 +223,10 @@ void render_layer_state(void) {
             oled_write_P(adjust_layer, false);
             oled_write_P(PSTR(" MED\n"), false);
             break;
+        case _MACRO2:
+            oled_write_P(adjust_layer, false);
+            oled_write_P(PSTR(" MC2\n"), false);
+            break;        
         default:
             oled_write_P(default_layer, false);
     }
