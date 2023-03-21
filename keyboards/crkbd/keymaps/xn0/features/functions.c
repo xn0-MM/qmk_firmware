@@ -1,7 +1,7 @@
 
 
 #include "enums.h"
-#include "macros.h"
+#include "functions.h"
 #include "layer_lock.h"
 #include "sendstring_spanish.h"
 #include "combos.h"
