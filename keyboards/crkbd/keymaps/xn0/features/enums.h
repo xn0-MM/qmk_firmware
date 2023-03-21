@@ -12,6 +12,7 @@ enum layer_number {
     _SYM,
     _NAV,
     _MEDIA,
+    _MACRO2
 };
 
 enum custom_keycodes {
