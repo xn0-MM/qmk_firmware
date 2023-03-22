@@ -5,6 +5,8 @@
 #include "layer_lock.h"
 #include "sendstring_spanish.h"
 #include "combos.h"
+#include "features/select_word.h"
+
 
 
 
@@ -20,6 +22,8 @@ uint16_t ctrl_tab_timer = 0;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     if (!process_layer_lock(keycode, record, LAYER_LOCK)) { return false; }
+
+    if (!process_select_word(keycode, record, SELWORD)) { return false; }
 
 
     switch (keycode) {
@@ -103,6 +107,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                  caps_word_toggle();
             }
             return false; 
+        case UPDIR:
+            if (record->event.pressed) {
+                 SEND_STRING("../");
+            }        
+            return false;
+        case HMTERM:
+            if (record->event.pressed) {
+                 SEND_STRING("~/");
+            }        
+            return false;
+
         }
     return true;
 };

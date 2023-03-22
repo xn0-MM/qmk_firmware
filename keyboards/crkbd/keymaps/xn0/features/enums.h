@@ -25,5 +25,8 @@ enum custom_keycodes {
     LAYER_LOCK,
     CLOSE,
     BRACES,
+    SELWORD,
+    UPDIR,
+    HMTERM,
     
 };
