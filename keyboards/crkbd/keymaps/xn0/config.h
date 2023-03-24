@@ -30,12 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define SPLIT_USB_DETECT
 #define SPLIT_USB_TIMEOUT 2500
-//#define SPLIT_LAYER_STATE_ENABLE
-//#define SPLIT_TRANSPORT_MIRROR
-//#define SPLIT_WPM_ENABLE
-//#define SPLIT_MODS_ENABLE
-//#define SPLIT_LED_STATE_ENABLE
-//#define SPLIT_OLED_ENABLE
+
 
 
 //features 
@@ -59,7 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
-//#define IGNORE_MOD_TAP_INTERRUPT
+#define IGNORE_MOD_TAP_INTERRUPT
 #define HOLD_ON_OTHER_KEY_PRESS
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 

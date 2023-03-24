@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "features/functions.h"
 #include "features/combos.h"
 #include "features/caps_word.h"
-//#include "features/select_word.h"
+#include "features/select_word.h"
 
 
 extern uint8_t is_master;
