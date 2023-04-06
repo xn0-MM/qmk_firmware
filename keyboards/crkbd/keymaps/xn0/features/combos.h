@@ -12,4 +12,3 @@ enum combos {
 };
 
 
-uint8_t combo_ref_from_layer(uint8_t layer);

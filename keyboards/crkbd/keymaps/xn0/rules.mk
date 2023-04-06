@@ -31,4 +31,3 @@ SRC += features/functions.c
 #SRC += features/dances.c
 SRC += features/combos.c
 SRC += features/caps_word.c
-SRC += features/select_word.c

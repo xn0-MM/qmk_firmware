@@ -23,11 +23,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "features/oled.h"
 #include "features/enums.h"
 #include "features/hrmods.h"
-//#include "features/dances.h"
 #include "features/functions.h"
 #include "features/combos.h"
 #include "features/caps_word.h"
-#include "features/select_word.h"
+
 
 
 extern uint8_t is_master;
