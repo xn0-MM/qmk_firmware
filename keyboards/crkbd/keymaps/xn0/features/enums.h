@@ -28,5 +28,8 @@ enum custom_keycodes {
     SELWORD,
     UPDIR,
     HMTERM,
+    SEL_LFT,
+    SEL_RGT,     
+    COMMAS
     
 };

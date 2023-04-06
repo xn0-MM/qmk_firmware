@@ -7,6 +7,7 @@
 #include "combos.h"
 
 
+
 bool is_alt_tab_active = false; 
 bool is_ctrl_tab_active = false;
 
@@ -17,7 +18,6 @@ uint16_t ctrl_tab_timer = 0;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     if (!process_layer_lock(keycode, record, LAYER_LOCK)) { return false; }
-
 
     switch (keycode) {
         case KC_QWE:
@@ -92,7 +92,35 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     }else {
                         SEND_STRING("()"SS_TAP(X_LEFT));
                     }
-                
+                }  
+                return false;
+        case COMMAS:  // Types ", ´, or ' 
+            if (record->event.pressed) {
+
+                uint8_t shifted = get_mods() & (MOD_MASK_SHIFT);
+                uint8_t ctrled = get_mods() & (MOD_MASK_CTRL);
+
+                if (shifted) {
+                        unregister_code(KC_LSFT);
+                        unregister_code(KC_RSFT);
+                        SEND_STRING("'");
+                    } else if (ctrled) {
+                        unregister_code(KC_LCTL);
+                        unregister_code(KC_RCTL);
+                        SEND_STRING("`");
+                    }else {
+                        SEND_STRING(SS_LSFT("2"));
+                    }
+                }
+                return false;
+        case SEL_LFT:  // Types [], {}, or <> and puts cursor between braces.
+            if (record->event.pressed) {
+                SEND_STRING(SS_LCTL(SS_TAP(X_LEFT)));
+                }
+                return false;
+        case SEL_RGT:  // Types [], {}, or <> and puts cursor between braces.
+            if (record->event.pressed) {
+                SEND_STRING(SS_LCTL(SS_TAP(X_RIGHT)));
                 }
                 return false;
         case CAPSW_COMBO:
