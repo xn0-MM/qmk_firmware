@@ -43,6 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //combos
 #define COMBO_TERM 60
+#define COMBO_TERM_PER_COMBO
 
 //Swap hands 
 #define TAPPING_TOGGLE 2

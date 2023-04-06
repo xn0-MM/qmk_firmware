@@ -100,6 +100,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                  caps_word_toggle();
             }
             return false; 
+        case DVCAPSW_COMBO:
+            if (record->event.pressed) {
+                 caps_word_toggle();
+            }
+            return false; 
         case UPDIR:
             if (record->event.pressed) {
                  SEND_STRING("../");
