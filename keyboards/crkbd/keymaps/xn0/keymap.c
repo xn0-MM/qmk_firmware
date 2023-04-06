@@ -36,11 +36,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      CW_TOGG,    ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                        ES_Y,    ES_U,    ES_I,    ES_O,   ES_P,   KC_BSPC, 
+      XXXXXXX,    ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                        ES_Y,    ES_U,    ES_I,    ES_O,   ES_P,   ES_MORD, 
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       SH_TT,  HOME_A,  HOME_S,  HOME_D,  HOME_F,    ES_G,                       ES_H,   HOME_J,  HOME_K, HOME_L, HOME_NTIL, SH_TT, 
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      ES_LABK,    ES_Z,  ES_X,    ES_C,    ES_V,    ES_B,                         ES_N,    ES_M, ES_COMM,  ES_DOT, ES_MINS,  XXXXXXX,
+      ES_LABK,    ES_Z,  ES_X,    ES_C,    ES_V,    ES_B,                         ES_N,    ES_M, ES_COMM,  ES_DOT, ES_MINS, ES_TILD   ,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
          LT(_FUNC,KC_ESC),   LT(_NUM, KC_ENTER),    LT(_MACRO, KC_BSPC),     LT(_SYM, KC_SPC), LT(_NAV, KC_TAB ), LT(_MEDIA, KC_DEL)
                                       //`--------------------------'  `--------------------------'
@@ -49,11 +49,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_DVORAK] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-     CW_TOGG, KC_COMMA, KC_DOT, KC_SEMICOLON, KC_P,   KC_Y,                          KC_F,   KC_G,   KC_C,     KC_H,   KC_L,  KC_BSPC,
+     XXXXXXX, KC_COMMA, KC_DOT, KC_SCLN, KC_P,   KC_Y,                          KC_F,   KC_G,   KC_C,     KC_H,   KC_L,  ES_MORD,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
      SH_TT,   HOME_A,   ALT_O,  CTL_E,   SFT_U,   KC_I,                         KC_D,   SFT_R,   CTL_TT,    ALT_N,  GUI_S,  SH_TT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    ES_LABK, ES_MINS, KC_Q,  KC_J,    KC_K,   KC_X,                         KC_B,   KC_M,   KC_W,     KC_V,  KC_Z,  KC_MINS,
+    ES_LABK, ES_MINS, KC_Q,  KC_J,    KC_K,   KC_X,                         KC_B,   KC_M,   KC_W,     KC_V,  KC_Z,  ES_MINS,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
        LT(_FUNC,KC_ESC), LT(_NUM, KC_ENTER), LT(_MACRO, KC_BSPC),          LT(_SYM, KC_SPC), LT(_NAV, KC_TAB), LT(_MEDIA, KC_DEL)
   ),
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LAYER_LOCK,                      ES_PLUS ,  ES_7,    ES_8,    ES_9, ES_ASTR , XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                      ES_MINS ,  ES_4,    ES_5,    ES_6, ES_SLSH , XXXXXXX,
+      XXXXXXX, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                      ES_MINS ,  ES_4,    ES_5,    ES_6, ES_SLSH , ES_MORD,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      ES_0,      ES_1,    ES_2,    ES_3,  ES_EQL,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -87,9 +87,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       QK_BOOT, XXXXXXX, LCTL(KC_W),  KC_UP, LCTL(KC_T), LAYER_LOCK,             CLOSE, LGUI(KC_LEFT), LGUI(KC_RIGHT), LGUI(KC_UP), LGUI(KC_DOWN), KC_KVM,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX,  KC_LEFT, KC_DOWN, KC_RIGHT, UPDIR,                    KC_ALT_TB,RCS(KC_TAB),KC_CTL_TB, LALT(KC_LEFT),LALT(KC_RIGHT) , XXXXXXX,
+      XXXXXXX, XXXXXXX,  KC_LEFT, LCTL_T(KC_DOWN), LSFT_T(KC_RIGHT), UPDIR,     KC_ALT_TB,SEL_LFT,SEL_RGT, LALT(KC_LEFT),LALT(KC_RIGHT) , XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    LCTL(KC_Y),LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), HMTERM,    LALT(KC_SPC),RCS(KC_LEFT), RCS(KC_RIGHT),  SELWORD, KC_SEL_LN, XXXXXXX,
+    LCTL(KC_Y),LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), HMTERM,             LALT(KC_SPC),KC_CTL_TB, KC_SEL_LN, XXXXXXX , XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        XXXXXXX, XXXXXXX,  XXXXXXX,      LT(_SYM, KC_SPC), KC_BSPC, KC_DEL
                                       //`--------------------------'  `--------------------------'
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    [_SYM] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      ES_NOT,  ES_SLSH, ES_PERC,   ES_AT, ES_DQUO,  BRACES,                     LAYER_LOCK, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      ES_NOT,  ES_SLSH, ES_PERC,   ES_AT, COMMAS,  BRACES,                     LAYER_LOCK, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       ES_CIRC, ES_PIPE, ES_AMPR, ES_SLSH, ES_QUES,  ES_EXLM ,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
