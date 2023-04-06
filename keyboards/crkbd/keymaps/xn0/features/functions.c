@@ -7,16 +7,11 @@
 #include "combos.h"
 
 
-
-
-
 bool is_alt_tab_active = false; 
 bool is_ctrl_tab_active = false;
 
 uint16_t alt_tab_timer = 0;     
 uint16_t ctrl_tab_timer = 0;
-
-
 
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -122,6 +117,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 void matrix_scan_user(void) { // The very important timer.
 
   layer_lock_task();
+  caps_word_task();
 
   if (is_alt_tab_active) {
     if (timer_elapsed(alt_tab_timer) > 2000) {
