@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX,  KC_LEFT, LCTL_T(KC_DOWN), LSFT_T(KC_RIGHT), UPDIR,     KC_ALT_TB,SEL_LFT,SEL_RGT, LALT(KC_LEFT),LALT(KC_RIGHT) , XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    LCTL(KC_Y),LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), HMTERM,             LALT(KC_SPC),KC_CTL_TB, KC_SEL_LN, XXXXXXX , XXXXXXX, XXXXXXX,
+    LCTL(KC_Y),LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), HMTERM,             LALT(KC_SPC),RCS(KC_TAB), KC_CTL_TB, KC_SEL_LN , XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        XXXXXXX, XXXXXXX,  XXXXXXX,      LT(_SYM, KC_SPC), KC_BSPC, KC_DEL
                                       //`--------------------------'  `--------------------------'
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    [_SYM] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      ES_NOT,  ES_SLSH, ES_PERC,   ES_AT, COMMAS,  BRACES,                     LAYER_LOCK, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      ES_NOT,  ES_SLSH, ES_PERC,   ES_AT, COMMAS,  BRACES,                     LAYER_LOCK, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       ES_CIRC, ES_PIPE, ES_AMPR, ES_SLSH, ES_QUES,  ES_EXLM ,                      XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
