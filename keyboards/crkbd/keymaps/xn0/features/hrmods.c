@@ -61,7 +61,7 @@ bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
             // Immediately select the hold action when another key is tapped.
             return true;
         case LT(_MACRO, KC_BSPC):
-            return true;
+            return true;        
 
     // Dvorak
             
