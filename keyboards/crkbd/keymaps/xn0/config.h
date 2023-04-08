@@ -23,12 +23,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define USE_MATRIX_I2C
 
 /* Select hand configuration */
-
-#define MASTER_LEFT
+#define EE_HANDS
+//#define MASTER_LEFT
 
 // Usb Magic, without split usb detect my promicro doesn´t work 
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT 2500
+#define SPLIT_USB_TIMEOUT 2000
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT 2500
 
 
 
@@ -39,7 +41,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // caps word
 #define CAPS_WORD_IDLE_TIMEOUT 5000 
-#define CAPS_WORD_INVERT_ON_SHIFT
 
 //combos
 #define COMBO_TERM 60
@@ -61,7 +62,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_INTERVAL 16
 #define MOUSEKEY_DELAY 50
 #define MOUSEKEY_MAX_SPEED 20
-#define MOUSEKEY_TIME_TO_MAX 100
+#define MOUSEKEY_TIME_TO_MAX 80
 
 #define MOUSEKEY_WHEEL_DELAY 50
 #define MOUSEKEY_WHEEL_INTERVAL 80
