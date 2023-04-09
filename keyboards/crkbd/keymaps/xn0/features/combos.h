@@ -13,6 +13,11 @@ enum combos {
   CB_TIL_E,
   CB_TIL_U,
   CB_TIL_I,
+  CB_DVK_TIL_A,
+  CB_DVK_TIL_O,
+  CB_DVK_TIL_E,
+  CB_DVK_TIL_U,
+  CB_DVK_TIL_I,
   COMBO_LENGTH
 };
 

@@ -11,7 +11,11 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 
 //qwerty combos 
 
-const uint16_t PROGMEM fj_til_combo[] = {HOME_F, HOME_J, COMBO_END};
+const uint16_t PROGMEM qwe_a_til_combo[] = {HOME_A, HOME_J, COMBO_END};
+const uint16_t PROGMEM qwe_e_til_combo[] = {KC_E, HOME_J, COMBO_END};
+const uint16_t PROGMEM qwe_i_til_combo[] = {HOME_F, KC_I, COMBO_END};
+const uint16_t PROGMEM qwe_o_til_combo[] = {HOME_F, KC_O, COMBO_END};
+const uint16_t PROGMEM qwe_u_til_combo[] = {HOME_F, KC_U, COMBO_END};
 const uint16_t PROGMEM caps_combo[] = {KC_R, KC_U, COMBO_END};
 
 //dvorak combos 
@@ -29,14 +33,18 @@ const uint16_t PROGMEM dvcaps_combo[] = {KC_P, KC_G, COMBO_END};
 combo_t key_combos[] = {
   [CB_LT_BSPC] = COMBO(bspc_combo, LCTL(KC_BSPC) ),
 
-  [CB_QWE_TILDE] = COMBO(fj_til_combo, KC_QUOT ),
+  [CB_TIL_A] = COMBO(qwe_a_til_combo, TIL_A ),
+  [CB_TIL_E] = COMBO(qwe_e_til_combo, TIL_E ),
+  [CB_TIL_I] = COMBO(qwe_i_til_combo, TIL_I ),
+  [CB_TIL_O] = COMBO(qwe_o_til_combo, TIL_O),
+  [CB_TIL_U] = COMBO(qwe_u_til_combo, TIL_U ),
   [CB_CAPSW_COMBO] = COMBO(caps_combo, CAPSW_COMBO ),
   
-  [CB_TIL_A] = COMBO(dvk_a_til_combo, TIL_A ),
-  [CB_TIL_O] = COMBO(dvk_o_til_combo, TIL_O ),
-  [CB_TIL_E] = COMBO(dvk_e_til_combo, TIL_E ),
-  [CB_TIL_U] = COMBO(dvk_u_til_combo, TIL_U),
-  [CB_TIL_I] = COMBO(dvk_i_til_combo, TIL_I ),
+  [CB_DVK_TIL_A] = COMBO(dvk_a_til_combo, TIL_A ),
+  [CB_DVK_TIL_O] = COMBO(dvk_o_til_combo, TIL_O ),
+  [CB_DVK_TIL_E] = COMBO(dvk_e_til_combo, TIL_E ),
+  [CB_DVK_TIL_U] = COMBO(dvk_u_til_combo, TIL_U),
+  [CB_DVK_TIL_I] = COMBO(dvk_i_til_combo, TIL_I ),
   [CB_DVCAPSW_COMBO] = COMBO(dvcaps_combo, CAPSW_COMBO )
   };
 
