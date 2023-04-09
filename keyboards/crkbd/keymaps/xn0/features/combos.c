@@ -17,11 +17,11 @@ const uint16_t PROGMEM caps_combo[] = {KC_R, KC_U, COMBO_END};
 //dvorak combos 
 
 //Tilde chords for dvk
-const uint16_t PROGMEM dvk_a_til_combo[] = {HOME_A, KC_D, COMBO_END};
-const uint16_t PROGMEM dvk_o_til_combo[] = {ALT_O, KC_D, COMBO_END};
-const uint16_t PROGMEM dvk_e_til_combo[] = {CTL_E, KC_D, COMBO_END};
-const uint16_t PROGMEM dvk_u_til_combo[] = {SFT_U, KC_D, COMBO_END};
-const uint16_t PROGMEM dvk_i_til_combo[] = {KC_I, KC_D, COMBO_END};
+const uint16_t PROGMEM dvk_a_til_combo[] = {HOME_A, SFT_R, COMBO_END};
+const uint16_t PROGMEM dvk_o_til_combo[] = {ALT_O, SFT_R, COMBO_END};
+const uint16_t PROGMEM dvk_e_til_combo[] = {CTL_E, SFT_R, COMBO_END};
+const uint16_t PROGMEM dvk_u_til_combo[] = {SFT_U, SFT_R, COMBO_END};
+const uint16_t PROGMEM dvk_i_til_combo[] = {KC_I, SFT_R, COMBO_END};
 // other chords for dvk
 const uint16_t PROGMEM dvcaps_combo[] = {KC_P, KC_G, COMBO_END};
 
@@ -54,9 +54,9 @@ uint16_t get_combo_term(uint16_t index, combo_t *combo) {
     return COMBO_TERM;
 };
 
-
+/*
 bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
-    /* Disable combo `SOME_COMBO` on layer `_LAYER_A` */
+    // Disable combo `SOME_COMBO` on layer `_LAYER_A` 
     switch (combo_index) {
         case TIL_A:
         case TIL_O:
@@ -71,7 +71,7 @@ bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode
     }
 
     return true;
-};
+}; */
 
 
 

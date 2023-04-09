@@ -145,27 +145,27 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
         case TIL_A:
             if (record->event.pressed) {
-                 SEND_STRING("á");
+                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_A));
             }        
             return false;
         case TIL_O:
             if (record->event.pressed) {
-                 SEND_STRING("ó");
+                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_O));
             }        
             return false; 
         case TIL_E:
             if (record->event.pressed) {
-                 SEND_STRING("é");
+                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_E));
             }        
             return false;
         case TIL_U:
             if (record->event.pressed) {
-                 SEND_STRING("ú");
+                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_U));
             }        
             return false;
         case TIL_I:
             if (record->event.pressed) {
-                 SEND_STRING("í");
+                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_I));
             }        
             return false;                          
         }

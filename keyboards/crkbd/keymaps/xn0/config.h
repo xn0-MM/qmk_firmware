@@ -46,7 +46,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define COMBO_TERM 60
 #define COMBO_TERM_PER_COMBO
 #define EXTRA_LONG_COMBOS
-#define COMBO_SHOULD_TRIGGER 
+//#define COMBO_SHOULD_TRIGGER 
 
 //Swap hands 
 #define TAPPING_TOGGLE 2
