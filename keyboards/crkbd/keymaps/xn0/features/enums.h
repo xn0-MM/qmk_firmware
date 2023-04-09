@@ -30,6 +30,12 @@ enum custom_keycodes {
     HMTERM,
     SEL_LFT,
     SEL_RGT,     
-    COMMAS
+    COMMAS,
+    CAPSW_COMBO,
+    TIL_A,
+    TIL_O,
+    TIL_E,
+    TIL_U,
+    TIL_I
     
 };

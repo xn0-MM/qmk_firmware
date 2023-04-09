@@ -4,15 +4,15 @@
 
 
 enum combos {
-  FJ_TILDE,
-  LT_BSPC_CB,
-  CAPSW_COMBO,
-  DVCAPSW_COMBO,
-  TIL_A,
-  TIL_O,
-  TIL_E,
-  TIL_U,
-  TIL_I,
+  CB_QWE_TILDE = SAFE_RANGE,
+  CB_LT_BSPC,
+  CB_CAPSW_COMBO,
+  CB_DVCAPSW_COMBO,
+  CB_TIL_A,
+  CB_TIL_O,
+  CB_TIL_E,
+  CB_TIL_U,
+  CB_TIL_I,
   COMBO_LENGTH
 };
 
