@@ -4,7 +4,7 @@
 
 
 enum combos {
-  CB_QWE_TILDE = SAFE_RANGE,
+  CB_QWE_TILDE,
   CB_LT_BSPC,
   CB_CAPSW_COMBO,
   CB_DVCAPSW_COMBO,
