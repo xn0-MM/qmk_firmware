@@ -143,6 +143,31 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                  SEND_STRING("~/");
             }        
             return false;
+        case TIL_A:
+            if (record->event.pressed) {
+                 SEND_STRING("á");
+            }        
+            return false;
+        case TIL_O:
+            if (record->event.pressed) {
+                 SEND_STRING("ó");
+            }        
+            return false; 
+        case TIL_E:
+            if (record->event.pressed) {
+                 SEND_STRING("é");
+            }        
+            return false;
+        case TIL_U:
+            if (record->event.pressed) {
+                 SEND_STRING("ú");
+            }        
+            return false;
+        case TIL_I:
+            if (record->event.pressed) {
+                 SEND_STRING("í");
+            }        
+            return false;                          
         }
     return true;
 };
