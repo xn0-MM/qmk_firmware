@@ -55,6 +55,18 @@ uint16_t get_combo_term(uint16_t index, combo_t *combo) {
         case CB_CAPSW_COMBO:
         case CB_DVCAPSW_COMBO:
             return 40;
+        case  CB_TIL_A:
+        case  CB_TIL_E:   
+        case  CB_TIL_I:
+        case  CB_TIL_O:
+        case  CB_TIL_U:
+        case  CB_DVK_TIL_A:
+        case  CB_DVK_TIL_O:
+        case  CB_DVK_TIL_E:
+        case  CB_DVK_TIL_U:
+        case  CB_DVK_TIL_I:
+            return 120;
+    }
         
     }
 
