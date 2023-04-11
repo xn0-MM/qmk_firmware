@@ -9,8 +9,9 @@ CAPS_WORD_ENABLE = yes
 COMBO_ENABLE = yes
 SWAP_HANDS_ENABLE = yes
 NKRO_ENABLE = yes
+TAP_DANCE_ENABLE = yes
 
-TAP_DANCE_ENABLE = no
+
 RGBLIGHT_ENABLE = no   # Enable WS2812 RGB underlight.
 CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
@@ -33,3 +34,4 @@ SRC += features/hrmods.c
 SRC += features/functions.c
 SRC += features/combos.c
 SRC += features/caps_word.c
+SRC += features/dances.c

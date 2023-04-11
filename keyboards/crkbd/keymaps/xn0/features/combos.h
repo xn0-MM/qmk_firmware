@@ -8,7 +8,7 @@ enum combos {
   CB_LT_BSPC,
   CB_CAPSW_COMBO,
   CB_DVCAPSW_COMBO,
- CB_TIL_A,
+  CB_TIL_A,
   CB_TIL_E,
   CB_TIL_I,
   CB_TIL_O,

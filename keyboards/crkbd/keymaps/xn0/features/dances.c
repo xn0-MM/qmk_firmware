@@ -1,9 +1,22 @@
 #include QMK_KEYBOARD_H
 
 #include "dances.h"
-#include "enums.h"
+#include "keymap_spanish.h"
 
 
+// Tap Dance definitions
+tap_dance_action_t tap_dance_actions[] = {
+    // Tap once for Escape, twice for Caps Lock
+    [TD_MORD_DIER] = ACTION_TAP_DANCE_DOUBLE(ES_MORD , ES_DIAE )
+};
+
+
+
+
+
+
+
+/*
 static td_state_t td_state;
 
 td_state_t cur_dance(tap_dance_state_t *state) {
@@ -77,3 +90,5 @@ void lt_bspc_reset(tap_dance_state_t *state, void *user_data) {
 tap_dance_action_t tap_dance_actions[] = {
     [LT_BSPC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, lt_bspc_finished, lt_bspc_reset)
 };
+
+*/

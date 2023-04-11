@@ -68,7 +68,7 @@ uint16_t get_combo_term(uint16_t index, combo_t *combo) {
             return 120;
     }
         
-    }
+    
 
 
     return COMBO_TERM;

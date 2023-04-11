@@ -1,11 +1,11 @@
 #pragma once
 
-
 // Tap Dance keycodes
 enum td_keycodes {
-    LT_BSPC 
+    TD_MORD_DIER     
 };
 
+/*
 // Define a type containing as many tapdance states as you need
 typedef enum {
     TD_NONE,
@@ -18,4 +18,6 @@ typedef enum {
 } td_state_t;
 
 void lt_bspc_finished(tap_dance_state_t *state, void *user_data);
-void lt_bspc_reset(tap_dance_state_t *state, void *user_data);
+void lt_bspc_reset(tap_dance_state_t *state, void *user_data);      
+
+*/
