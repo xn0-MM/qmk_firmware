@@ -65,12 +65,8 @@ uint16_t get_combo_term(uint16_t index, combo_t *combo) {
         case  CB_DVK_TIL_E:
         case  CB_DVK_TIL_U:
         case  CB_DVK_TIL_I:
-            return 120;
+            return 80;
     }
-        
-    
-
-
     return COMBO_TERM;
 };
 

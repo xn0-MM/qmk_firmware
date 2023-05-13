@@ -140,27 +140,48 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
         case TIL_A:
             if (record->event.pressed) {
-                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_A));
+                if (is_caps_word_on()){
+                    SEND_STRING(SS_TAP(X_QUOT)SS_LSFT(SS_TAP(X_A)));
+                } else {
+                    SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_A));
+                }
             }        
             return false;
         case TIL_O:
             if (record->event.pressed) {
-                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_O));
+                 if (is_caps_word_on()){
+                    SEND_STRING(SS_TAP(X_QUOT)SS_LSFT(SS_TAP(X_O)));
+                } else {
+                    SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_O));
+                }
             }        
             return false; 
         case TIL_E:
             if (record->event.pressed) {
-                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_E));
+                 if (is_caps_word_on()){
+                    SEND_STRING(SS_TAP(X_QUOT)SS_LSFT(SS_TAP(X_E)));
+                } else {
+                    SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_E));
+                }
             }        
             return false;
         case TIL_U:
             if (record->event.pressed) {
-                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_U));
+                 if (is_caps_word_on()){
+                    clear_mods();
+                    SEND_STRING(SS_TAP(X_QUOT)SS_LSFT(SS_TAP(X_U)));
+                } else {
+                    SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_U));
+                }
             }        
             return false;
         case TIL_I:
             if (record->event.pressed) {
-                 SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_I));
+                 if (is_caps_word_on()){
+                    SEND_STRING(SS_TAP(X_QUOT)SS_LSFT(SS_TAP(X_I)));
+                } else {
+                    SEND_STRING(SS_TAP(X_QUOT)SS_TAP(X_I));
+                }
             }        
             return false;                          
         }
