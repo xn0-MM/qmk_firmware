@@ -33,6 +33,5 @@ SRC += features/layer_lock.c
 SRC += features/oled.c
 SRC += features/hrmods.c
 SRC += features/functions.c
-SRC += features/combos.c
 SRC += features/caps_word.c
 SRC += features/dances.c
