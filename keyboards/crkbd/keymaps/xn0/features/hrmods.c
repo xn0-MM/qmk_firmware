@@ -17,6 +17,9 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case ALT_O:
         case ALT_N:
         case GUI_S:
+        case ALT_R:  
+        case ALT_I:  
+        case GUI_O:
             return TAPPING_TERM + 70;
         case LT(_SYM, KC_SPC):
             return TAPPING_TERM + 20;
@@ -76,6 +79,14 @@ bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
             return true;
         case CTL_TT:
             // Immediately select the hold action when another key is tapped.
+            return true;  
+
+    // Colemak
+        case CTL_S: 
+            return true;  
+        case SFT_TT: 
+            return true;   
+        case SFT_N:
             return true;  
         default:
             // Do not select the hold action when another key is tapped.

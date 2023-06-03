@@ -199,6 +199,10 @@ void render_layer_state(void) {
             oled_write_P(default_layer, false);
             oled_write_P(PSTR(" DVK\n"), false);
             break;
+        case _COLEMAK:
+            oled_write_P(default_layer, false);
+            oled_write_P(PSTR(" COL\n"), false);
+            break;
         case _FUNC:
             oled_write_P(adjust_layer, false);
             oled_write_P(PSTR(" FUN\n"), false);

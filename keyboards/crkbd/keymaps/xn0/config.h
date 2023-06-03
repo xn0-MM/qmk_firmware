@@ -52,7 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TOGGLE 2
 
 //Home row mods
-#define TAPPING_TERM 180
+#define TAPPING_TERM 160
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
@@ -63,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //Mousekeys y wheel
 #define MOUSEKEY_INTERVAL 16
 #define MOUSEKEY_DELAY 50
-#define MOUSEKEY_MAX_SPEED 20
+#define MOUSEKEY_MAX_SPEED 30
 #define MOUSEKEY_TIME_TO_MAX 80
 
 #define MOUSEKEY_WHEEL_DELAY 50

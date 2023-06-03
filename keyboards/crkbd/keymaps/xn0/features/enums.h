@@ -6,6 +6,7 @@
 enum layer_number {
     _QWERTY = 0,
     _DVORAK,
+    _COLEMAK,
     _FUNC,
     _NUM,
     _MACRO,
@@ -18,6 +19,7 @@ enum layer_number {
 enum custom_keycodes {
     KC_QWE= SAFE_RANGE,
     KC_DVO,
+    KC_COLMK,
     KC_KVM,
     KC_ALT_TB,
     KC_CTL_TB,

@@ -27,6 +27,22 @@
 #define ALT_N LALT_T(KC_N)
 #define GUI_S RGUI_T(KC_S)
 
+
+// Left-hand home row mods Colemak-dh
+
+#define ALT_R LALT_T(KC_R)
+#define CTL_S LCTL_T(KC_S)
+#define SFT_TT LSFT_T(KC_T)
+
+// Right-hand home row mods Colemak-dh
+#define SFT_N LSFT_T(KC_N)
+
+#define ALT_I LALT_T(KC_I)
+#define GUI_O LGUI_T(KC_O)
+
+
+
+
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record);
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record);
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record);
